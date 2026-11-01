@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09070f">
+  <meta name="description" content="CEIFADOR STORE — planos Nitro, atendimento pelo Discord e informações transparentes.">
+  <title>CEIFADOR STORE | Sua experiência começa aqui</title>
+  <style>
+    :root{--bg:#09070f;--panel:#15101f;--panel2:#1d142b;--purple:#a66bff;--purple2:#7c3fe0;--text:#fbf8ff;--muted:#bcb2ca;--line:#ffffff20;--green:#8be0b0}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 50% -12%,#422064 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:#09070feF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:950;letter-spacing:1.5px;text-decoration:none;font-size:18px}.brand b{color:#c69bff}.brand-mark{color:#c69bff;margin-right:7px}.navlinks{display:flex;align-items:center;gap:24px}.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:white}.nav-cta{padding:10px 15px;border-radius:12px;background:linear-gradient(120deg,var(--purple2),var(--purple));color:white!important;font-weight:800}.menu-btn{display:none;border:1px solid var(--line);background:#ffffff0b;color:white;border-radius:10px;padding:9px 12px;font-size:20px}
+    .hero{padding:86px 0 70px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #b17cff66;background:#a66bff16;color:#e2ceff;padding:8px 14px;border-radius:999px;font-size:11px;font-weight:850;letter-spacing:1.6px}.hero h1{font-size:clamp(40px,8vw,76px);line-height:1.02;letter-spacing:-2.8px;margin:22px 0 18px}.hero h1 span{color:#c69bff;text-shadow:0 0 35px #9b5cff55}.hero-copy{max-width:650px;margin:0 auto;color:var(--muted);font-size:16px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 19px;border-radius:13px;text-decoration:none;font-size:13px;font-weight:900;letter-spacing:.3px;transition:transform .18s,filter .18s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.primary{background:linear-gradient(120deg,#7838d8,#b16cff);box-shadow:0 9px 28px #8b4be344;color:white}.secondary{border:1px solid #ffffff35;background:#ffffff09;color:white}.trustline{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:32px;color:#d8cce8;font-size:12px}.trustline span{white-space:nowrap}
+    section{padding:54px 0}.section-head{text-align:center;margin-bottom:28px}.kicker{color:#c69bff;font-size:11px;font-weight:900;letter-spacing:2px}.section-head h2{font-size:clamp(26px,5vw,36px);line-height:1.15;margin:8px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{position:relative;display:flex;flex-direction:column;padding:25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(150deg,#21162f,#110d18);min-width:0}.card.featured{border-color:#b17cff;box-shadow:0 0 35px #9b5cff20}.plan{font-size:10px;color:#d9c2ff;letter-spacing:1.7px;font-weight:900}.card h3{font-size:24px;margin:12px 0 5px}.card p{font-size:14px;color:var(--muted);margin:0 0 22px}.period{color:#e3d5f5;font-size:12px;margin-bottom:18px}.card .btn{width:100%;margin-top:auto}.ribbon{position:absolute;right:14px;top:14px;background:#a66bff;color:#160d22;padding:5px 9px;border-radius:999px;font-size:9px;font-weight:950;letter-spacing:.6px}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info{padding:22px;border:1px solid var(--line);background:#ffffff08;border-radius:16px}.info .ico{font-size:23px}.info h3{font-size:15px;margin:10px 0 5px}.info p{font-size:13px;color:var(--muted);margin:0}.review-box{max-width:760px;margin:auto;text-align:center;padding:28px;border:1px dashed #b17cff66;background:#a66bff0b;border-radius:18px}.review-box strong{display:block;margin-bottom:7px}.review-box p{color:var(--muted);font-size:14px;margin:0 0 17px}.bottom-cta{margin:22px 0 65px;padding:34px 25px;border:1px solid #a66bff55;border-radius:22px;text-align:center;background:radial-gradient(ellipse at top,#4b2670 0,transparent 70%),#171020}.bottom-cta h2{font-size:clamp(24px,5vw,34px);margin:0 0 8px}.bottom-cta p{color:var(--muted);margin:0}.bottom-cta .actions{margin-top:20px}footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:var(--muted);font-size:12px}footer strong{color:#e8d9ff}
+    @media(max-width:760px){.nav{min-height:64px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:64px;left:0;right:0;padding:14px 18px 18px;background:#100b18;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:13px 5px;border-bottom:1px solid #ffffff12}.navlinks .nav-cta{text-align:center;margin-top:10px;border:0}.hero{padding:65px 0 48px}.hero h1{letter-spacing:-1.6px}.cards,.info-grid{grid-template-columns:1fr}.card{padding:23px}.trustline{gap:10px 14px}.wrap{width:min(100% - 28px,560px)}section{padding:42px 0}.bottom-cta{margin-bottom:45px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="CEIFADOR STORE início"><span class="brand-mark">☠</span>CEIFADOR <b>STORE</b></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <nav class="navlinks" id="navlinks" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#atendimento">Atendimento</a><a href="#avaliacoes">Avaliações</a>
+      <a class="nav-cta" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">ENTRAR NO DISCORD ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero wrap" id="inicio">
+    <div class="eyebrow">✦ SUA EXPERIÊNCIA DISCORD COMEÇA AQUI ✦</div>
+    <h1>SUBA DE NÍVEL.<br><span>ESCOLHA CEIFADOR.</span></h1>
+    <p class="hero-copy">Bem-vindo à CEIFADOR STORE! Conheça nossos planos Nitro e fale com a equipe para consultar valores, disponibilidade e condições antes de comprar.</p>
+    <div class="actions"><a class="btn primary" href="#produtos">VER PLANOS ↓</a><a class="btn secondary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">ENTRAR NO DISCORD ↗</a></div>
+    <div class="trustline"><span>⚡ Atendimento pelo Discord</span><span>✦ Informações transparentes</span><span>🛡️ Suporte da equipe</span></div>
+  </section>
+  <section class="wrap" id="produtos">
+    <div class="section-head"><div class="kicker">CATÁLOGO</div><h2>PLANOS NITRO</h2><p>Escolha o período e consulte os detalhes com nossa equipe.</p></div>
+    <div class="cards">
+      <article class="card"><div class="plan">PLANO 01</div><h3>Nitro Mensal</h3><p>Uma opção para aproveitar os benefícios do Discord Nitro por um mês.</p><div class="period">◷ Duração: 1 mês</div><a class="btn secondary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">CONSULTAR NO DISCORD ↗</a></article>
+      <article class="card featured"><div class="ribbon">EM DESTAQUE</div><div class="plan">PLANO 02</div><h3>Nitro Trimestral</h3><p>Mais tempo para curtir os recursos do Discord Nitro.</p><div class="period">◷ Duração: 3 meses</div><a class="btn primary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">CONSULTAR NO DISCORD ↗</a></article>
+      <article class="card"><div class="plan">PLANO 03</div><h3>Nitro Anual</h3><p>Uma opção de longo prazo para quem prefere um plano anual.</p><div class="period">◷ Duração: 1 ano</div><a class="btn secondary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">CONSULTAR NO DISCORD ↗</a></article>
+    </div>
+  </section>
+  <section class="wrap" id="atendimento">
+    <div class="section-head"><div class="kicker">ESTAMOS AQUI PARA AJUDAR</div><h2>ATENDIMENTO</h2><p>Fale com a equipe antes de concluir seu pedido.</p></div>
+    <div class="info-grid">
+      <article class="info"><div class="ico">🎫</div><h3>Suporte pelo Discord</h3><p>Entre no servidor oficial e procure o canal de atendimento para abrir um ticket.</p></article>
+      <article class="info"><div class="ico">💬</div><h3>Dúvidas e informações</h3><p>Consulte preços, disponibilidade, prazos e condições com a equipe.</p></article>
+      <article class="info"><div class="ico">🔎</div><h3>Compra com clareza</h3><p>Confirme todos os detalhes do pedido antes de realizar qualquer pagamento.</p></article>
+    </div>
+    <div class="actions"><a class="btn primary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">ABRIR ATENDIMENTO ↗</a></div>
+  </section>
+  <section class="wrap" id="avaliacoes">
+    <div class="section-head"><div class="kicker">OPINIÃO DA COMUNIDADE</div><h2>AVALIAÇÕES</h2><p>Transparência é parte da experiência.</p></div>
+    <div class="review-box"><strong>⭐ Sua opinião pode aparecer aqui</strong><p>As avaliações serão publicadas conforme forem recebidas e autorizadas. Não exibimos depoimentos fictícios.</p><a class="btn secondary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">ENVIAR AVALIAÇÃO ↗</a></div>
+  </section>
+  <section class="wrap bottom-cta">
+    <h2>PRONTO PARA CONHECER A LOJA?</h2><p>Entre no Discord oficial e converse com a equipe da CEIFADOR STORE.</p>
+    <div class="actions"><a class="btn primary" href="https://discord.gg/34tWF3FWk" target="_blank" rel="noopener noreferrer">ACESSAR DISCORD ↗</a></div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>☠ CEIFADOR STORE — QUALIDADE, CONFIANÇA E EVOLUÇÃO!</strong><br>Loja independente. Discord é uma marca de seus respectivos proprietários.</div></footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn');
+  const navlinks=document.getElementById('navlinks');
+  menuBtn.addEventListener('click',()=>{const opened=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(opened));menuBtn.setAttribute('aria-label',opened?'Fechar menu':'Abrir menu');menuBtn.textContent=opened?'✕':'☰'});
+  navlinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Abrir menu');menuBtn.textContent='☰'}));
+</script>
+</body>
+</html>
